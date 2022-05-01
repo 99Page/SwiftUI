@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct MyAlertView: View {
+    
+    @Binding var isShowAlert: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("show alert") {
+            isShowAlert.toggle()
+        }
+        .alert(isPresented: $isShowAlert) {
+            let defaultButton = Alert.Button.default(Text("저장"))
+            let cancelButton = Alert.Button.default(Text("취소"))
+            
+            return Alert(title: Text("Alert Title"), message: Text("Alert message"), primaryButton: defaultButton, secondaryButton: cancelButton)
+        }
     }
 }
 
 struct MyAlertView_Previews: PreviewProvider {
     static var previews: some View {
-        MyAlertView()
+        MyAlertView(isShowAlert: .constant(false))
     }
 }

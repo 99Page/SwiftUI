@@ -9,13 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var myName = "kim"
+    @State private var isShowAlert = false
+    
     
     var body: some View {
-        
-        Text("Hello, world!")
-            .padding()
-            .redacted(reason: .placeholder)
+        MyTextFieldTester()
     }
 }
 
