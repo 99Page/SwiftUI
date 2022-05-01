@@ -13,7 +13,8 @@ struct ContentView: View {
     
     
     var body: some View {
-        MyTextFieldTester()
+        MyAlertView(isShowAlert: $isShowAlert)
+        //MyTextFieldTester()
     }
 }
 

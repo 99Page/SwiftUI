@@ -17,8 +17,8 @@ struct MyAlertView: View {
         }
         .alert(isPresented: $isShowAlert) {
             let defaultButton = Alert.Button.default(Text("저장"))
-            let cancelButton = Alert.Button.default(Text("취소"))
-            
+            let cancelButton = Alert.Button.cancel(Text("취소"))
+
             return Alert(title: Text("Alert Title"), message: Text("Alert message"), primaryButton: defaultButton, secondaryButton: cancelButton)
         }
     }
