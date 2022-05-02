@@ -16,6 +16,7 @@
 		1502D78F280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502D78E280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift */; };
 		15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487BB2281E4C0F0088EF5A /* MyAlertView.swift */; };
 		15487BB5281E5E280088EF5A /* MyTextFileAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */; };
+		15508E35281F7A2300EDEB10 /* ListViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15508E34281F7A2300EDEB10 /* ListViewTester.swift */; };
 		159F7836281E60D700293E83 /* MyTextFieldTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F7835281E60D700293E83 /* MyTextFieldTester.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		1502D78E280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		15487BB2281E4C0F0088EF5A /* MyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertView.swift; sourceTree = "<group>"; };
 		15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextFileAlert.swift; sourceTree = "<group>"; };
+		15508E34281F7A2300EDEB10 /* ListViewTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTester.swift; sourceTree = "<group>"; };
 		159F7835281E60D700293E83 /* MyTextFieldTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextFieldTester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 		1502D770280D20E200219350 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				15508E33281F7A1600EDEB10 /* ListView */,
 				15487BAF281E4BE80088EF5A /* View */,
 				1502D771280D20E200219350 /* SwiftUITestApp.swift */,
 				1502D773280D20E200219350 /* ContentView.swift */,
@@ -142,6 +145,14 @@
 				159F7835281E60D700293E83 /* MyTextFieldTester.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		15508E33281F7A1600EDEB10 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				15508E34281F7A2300EDEB10 /* ListViewTester.swift */,
+			);
+			path = ListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				159F7836281E60D700293E83 /* MyTextFieldTester.swift in Sources */,
+				15508E35281F7A2300EDEB10 /* ListViewTester.swift in Sources */,
 				15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */,
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				1502D772280D20E200219350 /* SwiftUITestApp.swift in Sources */,
