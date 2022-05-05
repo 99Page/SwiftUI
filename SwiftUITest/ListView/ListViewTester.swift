@@ -9,19 +9,19 @@ import SwiftUI
 
 struct ListViewTester: View {
     
-    var columns: [GridItem] {
-        [
-            GridItem(.flexible(minimum: 200, maximum: 200))
-        ]
-    }
     var body: some View {
-        ScrollView {
-            List {
-                Text("AAAA")
-                Text("BBBB")
-            }
+        List {
+            Text("AAAA")
+            Text("BBBB")
+            Text("AAAA")
+            Text("BBBB")
+            Text("AAAA")
+            Text("BBBB")
+            Text("AAAA")
+            Text("BBBB")
+            Text("AAAA")
+            Text("BBBB")
         }
-
     }
 }
 
