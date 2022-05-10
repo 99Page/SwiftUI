@@ -19,6 +19,7 @@
 		15508E35281F7A2300EDEB10 /* ListViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15508E34281F7A2300EDEB10 /* ListViewTester.swift */; };
 		1553C6B928235E6E00EA8615 /* MySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553C6B828235E6E00EA8615 /* MySection.swift */; };
 		159F7836281E60D700293E83 /* MyTextFieldTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F7835281E60D700293E83 /* MyTextFieldTester.swift */; };
+		15EFC71B282A20F100F65F0D /* MySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EFC71A282A20F100F65F0D /* MySheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		15508E34281F7A2300EDEB10 /* ListViewTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTester.swift; sourceTree = "<group>"; };
 		1553C6B828235E6E00EA8615 /* MySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySection.swift; sourceTree = "<group>"; };
 		159F7835281E60D700293E83 /* MyTextFieldTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextFieldTester.swift; sourceTree = "<group>"; };
+		15EFC71A282A20F100F65F0D /* MySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		1502D770280D20E200219350 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				15EFC717282A20CD00F65F0D /* Modifier */,
 				1553C6B728235E5C00EA8615 /* Section */,
 				15508E33281F7A1600EDEB10 /* ListView */,
 				15487BAF281E4BE80088EF5A /* AlertView */,
@@ -164,6 +167,14 @@
 				1553C6B828235E6E00EA8615 /* MySection.swift */,
 			);
 			path = Section;
+			sourceTree = "<group>";
+		};
+		15EFC717282A20CD00F65F0D /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				15EFC71A282A20F100F65F0D /* MySheet.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +314,7 @@
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				1502D772280D20E200219350 /* SwiftUITestApp.swift in Sources */,
 				15487BB5281E5E280088EF5A /* MyTextFileAlert.swift in Sources */,
+				15EFC71B282A20F100F65F0D /* MySheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
