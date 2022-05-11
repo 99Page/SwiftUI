@@ -14,6 +14,9 @@
 		1502D783280D20E300219350 /* SwiftUITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502D782280D20E300219350 /* SwiftUITestTests.swift */; };
 		1502D78D280D20E300219350 /* SwiftUITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502D78C280D20E300219350 /* SwiftUITestUITests.swift */; };
 		1502D78F280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502D78E280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift */; };
+		1507C08D282B97E5001D38A5 /* MyClipShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507C08C282B97E5001D38A5 /* MyClipShape.swift */; };
+		1528E7A5282BDDFA002C4B74 /* MyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528E7A4282BDDFA002C4B74 /* MyPath.swift */; };
+		153FCB80282BDA67009E469A /* MyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FCB7F282BDA67009E469A /* MyShape.swift */; };
 		15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487BB2281E4C0F0088EF5A /* MyAlertView.swift */; };
 		15487BB5281E5E280088EF5A /* MyTextFileAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */; };
 		15508E35281F7A2300EDEB10 /* ListViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15508E34281F7A2300EDEB10 /* ListViewTester.swift */; };
@@ -50,6 +53,9 @@
 		1502D788280D20E300219350 /* SwiftUITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1502D78C280D20E300219350 /* SwiftUITestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestUITests.swift; sourceTree = "<group>"; };
 		1502D78E280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1507C08C282B97E5001D38A5 /* MyClipShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClipShape.swift; sourceTree = "<group>"; };
+		1528E7A4282BDDFA002C4B74 /* MyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPath.swift; sourceTree = "<group>"; };
+		153FCB7F282BDA67009E469A /* MyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShape.swift; sourceTree = "<group>"; };
 		15487BB2281E4C0F0088EF5A /* MyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertView.swift; sourceTree = "<group>"; };
 		15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextFileAlert.swift; sourceTree = "<group>"; };
 		15508E34281F7A2300EDEB10 /* ListViewTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTester.swift; sourceTree = "<group>"; };
@@ -106,10 +112,9 @@
 		1502D770280D20E200219350 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				153FCB7E282BDA33009E469A /* Protocol */,
+				153FCB7D282BDA23009E469A /* View */,
 				15EFC717282A20CD00F65F0D /* Modifier */,
-				1553C6B728235E5C00EA8615 /* Section */,
-				15508E33281F7A1600EDEB10 /* ListView */,
-				15487BAF281E4BE80088EF5A /* AlertView */,
 				1502D771280D20E200219350 /* SwiftUITestApp.swift */,
 				1502D773280D20E200219350 /* ContentView.swift */,
 				1502D775280D20E300219350 /* Assets.xcassets */,
@@ -143,6 +148,25 @@
 			path = SwiftUITestUITests;
 			sourceTree = "<group>";
 		};
+		153FCB7D282BDA23009E469A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15487BAF281E4BE80088EF5A /* AlertView */,
+				15508E33281F7A1600EDEB10 /* ListView */,
+				1553C6B728235E5C00EA8615 /* Section */,
+				1528E7A4282BDDFA002C4B74 /* MyPath.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		153FCB7E282BDA33009E469A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				153FCB7F282BDA67009E469A /* MyShape.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		15487BAF281E4BE80088EF5A /* AlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				15EFC71A282A20F100F65F0D /* MySheet.swift */,
+				1507C08C282B97E5001D38A5 /* MyClipShape.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -314,7 +339,10 @@
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				1502D772280D20E200219350 /* SwiftUITestApp.swift in Sources */,
 				15487BB5281E5E280088EF5A /* MyTextFileAlert.swift in Sources */,
+				1507C08D282B97E5001D38A5 /* MyClipShape.swift in Sources */,
+				1528E7A5282BDDFA002C4B74 /* MyPath.swift in Sources */,
 				15EFC71B282A20F100F65F0D /* MySheet.swift in Sources */,
+				153FCB80282BDA67009E469A /* MyShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
