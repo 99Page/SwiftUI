@@ -9,14 +9,14 @@ import SwiftUI
 
 struct MyPath: View {
     var body: some View {
+        
         Path { path in
             path.move(to: CGPoint(x: 200, y: 0))
-            path.addLine(to: CGPoint(x: 200, y: 200))
-            path.addLine(to: CGPoint(x: 0, y: 200))
-            path.addLine(to: CGPoint(x: 0, y: 0))
-            path.addLine(to: CGPoint(x: 200, y: 0))
+            path.addLine(to: CGPoint(x: 300, y: 200))
+            path.addLine(to: CGPoint(x: 100, y: 200))
+            path.closeSubpath()
         }
-        .fill(.blue)
+        .stroke(Color.blue, style: StrokeStyle(lineWidth : 20, lineJoin: .miter))
     }
 }
 
