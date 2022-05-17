@@ -12,8 +12,8 @@ struct MyPath: View {
         
         Path { path in
             path.move(to: CGPoint(x: 200, y: 0))
-            path.addLine(to: CGPoint(x: 300, y: 200))
-            path.addLine(to: CGPoint(x: 100, y: 200))
+            path.addLine(to: CGPoint(x: 400, y: 800))
+            path.addLine(to: CGPoint(x: 0, y: 800))
             path.closeSubpath()
         }
         .stroke(Color.blue, style: StrokeStyle(lineWidth : 20, lineJoin: .miter))

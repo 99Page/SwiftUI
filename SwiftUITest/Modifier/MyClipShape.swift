@@ -24,10 +24,17 @@ struct MyClipShape: View {
                 .background(Color.blue)
                 .clipShape(Capsule())
             
-            Text("")
+            Text("Hello")
                 .frame(width: 100, height: 50)
                 .background(Color.blue)
                 .clipShape(Circle())
+            
+            Text("Hello")
+                .foregroundColor(.black)
+                .frame(width: 100, height: 100)
+                .background(.blue)
+                .clipShape(MyShape())
+                .cornerRadius(20)
                     
         }
     }
