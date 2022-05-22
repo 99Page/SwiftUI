@@ -16,8 +16,9 @@ struct ContentView: View {
         //MyAlertView(isShowAlert: $isShowAlert)
         //MyTextFieldTester()
 //        ListViewTester()
-        MySheetAndFullScreenCover()
+//        MySheetAndFullScreenCover()
 //        MyNavigationLink()
+        TextEditorAndField()
     }
 }
 
