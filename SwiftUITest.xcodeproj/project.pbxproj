@@ -16,6 +16,7 @@
 		1502D78F280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502D78E280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift */; };
 		1507C08D282B97E5001D38A5 /* MyClipShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507C08C282B97E5001D38A5 /* MyClipShape.swift */; };
 		1528E7A5282BDDFA002C4B74 /* MyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528E7A4282BDDFA002C4B74 /* MyPath.swift */; };
+		1533C46F283B648700CE6A1A /* MyPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533C46E283B648700CE6A1A /* MyPresentationMode.swift */; };
 		153FCB80282BDA67009E469A /* MyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FCB7F282BDA67009E469A /* MyShape.swift */; };
 		15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487BB2281E4C0F0088EF5A /* MyAlertView.swift */; };
 		15487BB5281E5E280088EF5A /* MyTextFileAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */; };
@@ -58,6 +59,7 @@
 		1502D78E280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1507C08C282B97E5001D38A5 /* MyClipShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClipShape.swift; sourceTree = "<group>"; };
 		1528E7A4282BDDFA002C4B74 /* MyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPath.swift; sourceTree = "<group>"; };
+		1533C46E283B648700CE6A1A /* MyPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPresentationMode.swift; sourceTree = "<group>"; };
 		153FCB7F282BDA67009E469A /* MyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShape.swift; sourceTree = "<group>"; };
 		15487BB2281E4C0F0088EF5A /* MyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertView.swift; sourceTree = "<group>"; };
 		15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextFileAlert.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				1553C6B728235E5C00EA8615 /* Section */,
 				1528E7A4282BDDFA002C4B74 /* MyPath.swift */,
 				15AC010B282E31F40031CCE7 /* MyNavigationLink.swift */,
+				1533C46E283B648700CE6A1A /* MyPresentationMode.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				1573B2302839FF040080965E /* TextEditorPlaceholder.swift in Sources */,
 				15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */,
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
+				1533C46F283B648700CE6A1A /* MyPresentationMode.swift in Sources */,
 				15AC010C282E31F40031CCE7 /* MyNavigationLink.swift in Sources */,
 				1502D772280D20E200219350 /* SwiftUITestApp.swift in Sources */,
 				15487BB5281E5E280088EF5A /* MyTextFileAlert.swift in Sources */,

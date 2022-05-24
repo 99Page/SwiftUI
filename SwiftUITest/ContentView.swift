@@ -9,16 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var isShowAlert = false
-    
-    
     var body: some View {
-        //MyAlertView(isShowAlert: $isShowAlert)
-        //MyTextFieldTester()
-//        ListViewTester()
-//        MySheetAndFullScreenCover()
-//        MyNavigationLink()
-        TextEditorAndField()
+        
+        NavigationView {
+            NavigationLink {
+                MyPresentationMode()
+                    .navigationBarBackButtonHidden(true)
+            } label: {
+                Text("Navigation")
+            }
+        }
     }
 }
 
