@@ -6,11 +6,21 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
     
     var body: some View {
-        ImageViewTester()
+        VStack {
+            Text("KFImage")
+            KFImage(URL(string: "https://i.postimg.cc/mZ52x6h8/Unknown.png")!)
+                .onFailure({ error in
+                    print("Error : \(error)")
+                })
+                .resizable()
+                .frame(width: 100, height: 100)
+                .clipped()
+        }
     }
 }
 
