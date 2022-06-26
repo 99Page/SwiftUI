@@ -23,12 +23,21 @@
 		15487BB5281E5E280088EF5A /* MyTextFileAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */; };
 		15508E35281F7A2300EDEB10 /* ListViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15508E34281F7A2300EDEB10 /* ListViewTester.swift */; };
 		1553C6B928235E6E00EA8615 /* MySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553C6B828235E6E00EA8615 /* MySection.swift */; };
+		156CD61F28523129000E7D90 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156CD61E28523129000E7D90 /* TestModel.swift */; };
+		157376FD284F81E00068F1DB /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157376FC284F81E00068F1DB /* SheetView.swift */; };
+		157376FF284F85A10068F1DB /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157376FE284F85A10068F1DB /* TestViewModel.swift */; };
 		1573B22D2839F90E0080965E /* TextEditorAndField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573B22C2839F90E0080965E /* TextEditorAndField.swift */; };
 		1573B2302839FF040080965E /* TextEditorPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573B22F2839FF040080965E /* TextEditorPlaceholder.swift */; };
 		1580E3C42843AB6700FB30A7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1580E3C32843AB6700FB30A7 /* Kingfisher */; };
 		1588FD162845D2EE003E7E0C /* KingFisherTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588FD152845D2EE003E7E0C /* KingFisherTester.swift */; };
 		1588FD1B2845D79A003E7E0C /* StateProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588FD1A2845D79A003E7E0C /* StateProperty.swift */; };
+		159A3F442866E0D400BF89FD /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3F432866E0D400BF89FD /* TodoViewModel.swift */; };
+		159A3F472866E2B800BF89FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 159A3F462866E2B800BF89FD /* Alamofire */; };
+		159A3F4B2866F54600BF89FD /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3F4A2866F54600BF89FD /* Todo.swift */; };
 		159F7836281E60D700293E83 /* MyTextFieldTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F7835281E60D700293E83 /* MyTextFieldTester.swift */; };
+		15A0211A28682CCF0016ED2E /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0211928682CCF0016ED2E /* TodoList.swift */; };
+		15A0211C286832560016ED2E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0211B286832560016ED2E /* Post.swift */; };
+		15A0211E286843C10016ED2E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0211D286843C10016ED2E /* Customer.swift */; };
 		15AC010C282E31F40031CCE7 /* MyNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AC010B282E31F40031CCE7 /* MyNavigationLink.swift */; };
 		15ADCBDD28485CBC009734C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15ADCBDC28485CBC009734C1 /* GoogleService-Info.plist */; };
 		15ADCBE028485D25009734C1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 15ADCBDF28485D25009734C1 /* FirebaseAuth */; };
@@ -78,11 +87,19 @@
 		15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextFileAlert.swift; sourceTree = "<group>"; };
 		15508E34281F7A2300EDEB10 /* ListViewTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTester.swift; sourceTree = "<group>"; };
 		1553C6B828235E6E00EA8615 /* MySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySection.swift; sourceTree = "<group>"; };
+		156CD61E28523129000E7D90 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		157376FC284F81E00068F1DB /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		157376FE284F85A10068F1DB /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
 		1573B22C2839F90E0080965E /* TextEditorAndField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorAndField.swift; sourceTree = "<group>"; };
 		1573B22F2839FF040080965E /* TextEditorPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorPlaceholder.swift; sourceTree = "<group>"; };
 		1588FD152845D2EE003E7E0C /* KingFisherTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingFisherTester.swift; sourceTree = "<group>"; };
 		1588FD1A2845D79A003E7E0C /* StateProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateProperty.swift; sourceTree = "<group>"; };
+		159A3F432866E0D400BF89FD /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		159A3F4A2866F54600BF89FD /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		159F7835281E60D700293E83 /* MyTextFieldTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextFieldTester.swift; sourceTree = "<group>"; };
+		15A0211928682CCF0016ED2E /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		15A0211B286832560016ED2E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		15A0211D286843C10016ED2E /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		15AC010B282E31F40031CCE7 /* MyNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationLink.swift; sourceTree = "<group>"; };
 		15ADCBDC28485CBC009734C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		15ADCBE828485DC2009734C1 /* AuthView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthView .swift"; sourceTree = "<group>"; };
@@ -99,6 +116,7 @@
 				15ADCBE228485D25009734C1 /* FirebaseDatabase in Frameworks */,
 				15ADCBE428485D25009734C1 /* FirebaseFirestore in Frameworks */,
 				1580E3C42843AB6700FB30A7 /* Kingfisher in Frameworks */,
+				159A3F472866E2B800BF89FD /* Alamofire in Frameworks */,
 				15ADCBE628485D25009734C1 /* FirebaseStorage in Frameworks */,
 				15ADCBE028485D25009734C1 /* FirebaseAuth in Frameworks */,
 			);
@@ -145,6 +163,7 @@
 		1502D770280D20E200219350 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				159A3F482866F51700BF89FD /* Alamofire */,
 				153FCB7D282BDA23009E469A /* View */,
 				150F015F2847A66E00CBA883 /* ViewModel */,
 				150F015E2847A66700CBA883 /* Model */,
@@ -189,6 +208,7 @@
 		150F015E2847A66700CBA883 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				156CD61E28523129000E7D90 /* TestModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				150F01602847A6D800CBA883 /* AuthViewModel.swift */,
+				157376FE284F85A10068F1DB /* TestViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -263,8 +284,21 @@
 			isa = PBXGroup;
 			children = (
 				1588FD1A2845D79A003E7E0C /* StateProperty.swift */,
+				157376FC284F81E00068F1DB /* SheetView.swift */,
 			);
 			path = Property;
+			sourceTree = "<group>";
+		};
+		159A3F482866F51700BF89FD /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				159A3F432866E0D400BF89FD /* TodoViewModel.swift */,
+				159A3F4A2866F54600BF89FD /* Todo.swift */,
+				15A0211928682CCF0016ED2E /* TodoList.swift */,
+				15A0211B286832560016ED2E /* Post.swift */,
+				15A0211D286843C10016ED2E /* Customer.swift */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		15ADCBE728485DAC009734C1 /* Auth */ = {
@@ -323,6 +357,7 @@
 				15ADCBE128485D25009734C1 /* FirebaseDatabase */,
 				15ADCBE328485D25009734C1 /* FirebaseFirestore */,
 				15ADCBE528485D25009734C1 /* FirebaseStorage */,
+				159A3F462866E2B800BF89FD /* Alamofire */,
 			);
 			productName = SwiftUITest;
 			productReference = 1502D76E280D20E200219350 /* SwiftUITest.app */;
@@ -399,6 +434,7 @@
 			packageReferences = (
 				1580E3C22843AB6700FB30A7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				15ADCBDE28485D25009734C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				159A3F452866E2B800BF89FD /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 1502D76F280D20E200219350 /* Products */;
 			projectDirPath = "";
@@ -443,22 +479,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157376FF284F85A10068F1DB /* TestViewModel.swift in Sources */,
 				15F45F29283F815000EF9027 /* ImageViewTester.swift in Sources */,
 				1553C6B928235E6E00EA8615 /* MySection.swift in Sources */,
+				156CD61F28523129000E7D90 /* TestModel.swift in Sources */,
 				159F7836281E60D700293E83 /* MyTextFieldTester.swift in Sources */,
+				15A0211E286843C10016ED2E /* Customer.swift in Sources */,
 				150F01612847A6D800CBA883 /* AuthViewModel.swift in Sources */,
 				15508E35281F7A2300EDEB10 /* ListViewTester.swift in Sources */,
 				1573B2302839FF040080965E /* TextEditorPlaceholder.swift in Sources */,
 				15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */,
+				15A0211A28682CCF0016ED2E /* TodoList.swift in Sources */,
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				15ADCBE928485DC2009734C1 /* AuthView .swift in Sources */,
+				159A3F4B2866F54600BF89FD /* Todo.swift in Sources */,
 				1533C46F283B648700CE6A1A /* MyPresentationMode.swift in Sources */,
 				15AC010C282E31F40031CCE7 /* MyNavigationLink.swift in Sources */,
+				159A3F442866E0D400BF89FD /* TodoViewModel.swift in Sources */,
 				1502D772280D20E200219350 /* SwiftUITestApp.swift in Sources */,
 				15487BB5281E5E280088EF5A /* MyTextFileAlert.swift in Sources */,
 				1507C08D282B97E5001D38A5 /* MyClipShape.swift in Sources */,
+				15A0211C286832560016ED2E /* Post.swift in Sources */,
 				1588FD162845D2EE003E7E0C /* KingFisherTester.swift in Sources */,
 				1528E7A5282BDDFA002C4B74 /* MyPath.swift in Sources */,
+				157376FD284F81E00068F1DB /* SheetView.swift in Sources */,
 				15EFC71B282A20F100F65F0D /* MySheetAndFullScreenCover.swift in Sources */,
 				15F45F25283F810F00EF9027 /* ImagePicker.swift in Sources */,
 				153FCB80282BDA67009E469A /* MyShape.swift in Sources */,
@@ -798,6 +842,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		159A3F452866E2B800BF89FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		15ADCBDE28485D25009734C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -813,6 +865,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1580E3C22843AB6700FB30A7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		159A3F462866E2B800BF89FD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159A3F452866E2B800BF89FD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		15ADCBDF28485D25009734C1 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;

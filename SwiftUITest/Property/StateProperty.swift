@@ -9,26 +9,26 @@ import SwiftUI
 
 struct StateProperty: View {
     
-    @State private var textValue:Int = 1
-    @State private var isPresented = false
+    @State var isSheetShowing = false
+    @EnvironmentObject var viewModel: TestViewModel
+    
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20) {
-            
-            Text("Value : \(textValue)")
-            
-            Button {
-                textValue += 1
-            } label: {
-                Text("Up")
-            }
-        }
         
+        Button {
+            isSheetShowing.toggle()
+        } label: {
+            Text("Sheet Toggle")
+        }
+        .sheet(isPresented: $isSheetShowing) {
+            SheetView(data: $viewModel.value)
+        }
+
     }
 }
 
-struct StateProperty_Previews: PreviewProvider {
-    static var previews: some View {
-        StateProperty()
-    }
-}
+//struct StateProperty_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StateProperty()
+//    }
+//}
