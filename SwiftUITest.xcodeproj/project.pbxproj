@@ -54,6 +54,9 @@
 		15EFC71B282A20F100F65F0D /* MySheetAndFullScreenCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EFC71A282A20F100F65F0D /* MySheetAndFullScreenCover.swift */; };
 		15F45F25283F810F00EF9027 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F45F24283F810F00EF9027 /* ImagePicker.swift */; };
 		15F45F29283F815000EF9027 /* ImageViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F45F28283F815000EF9027 /* ImageViewTester.swift */; };
+		15F56C06286A00060085354E /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F56C05286A00060085354E /* Story.swift */; };
+		15F56C08286A01490085354E /* StoryPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F56C07286A01490085354E /* StoryPageView.swift */; };
+		15F56C0B286A03840085354E /* NavigationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F56C0A286A03840085354E /* NavigationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,9 @@
 		15EFC71A282A20F100F65F0D /* MySheetAndFullScreenCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySheetAndFullScreenCover.swift; sourceTree = "<group>"; };
 		15F45F24283F810F00EF9027 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		15F45F28283F815000EF9027 /* ImageViewTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewTester.swift; sourceTree = "<group>"; };
+		15F56C05286A00060085354E /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		15F56C07286A01490085354E /* StoryPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPageView.swift; sourceTree = "<group>"; };
+		15F56C0A286A03840085354E /* NavigationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +258,7 @@
 				1522AB782869C2CF006F05A3 /* StoryView.swift */,
 				1522AB7A2869C2D9006F05A3 /* FavoritesView.swift */,
 				1522AB7C2869C2DE006F05A3 /* FunFactsView.swift */,
+				15F56C07286A01490085354E /* StoryPageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				1522AB7F2869C46D006F05A3 /* Info.swift */,
+				15F56C05286A00060085354E /* Story.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 		153FCB7D282BDA23009E469A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15F56C09286A03650085354E /* Navigation */,
 				15ADCBE728485DAC009734C1 /* Auth */,
 				1573B22E2839FEF10080965E /* Text */,
 				15487BAF281E4BE80088EF5A /* AlertView */,
@@ -375,6 +384,14 @@
 				1588FD152845D2EE003E7E0C /* KingFisherTester.swift */,
 			);
 			path = Tester;
+			sourceTree = "<group>";
+		};
+		15F56C09286A03650085354E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				15F56C0A286A03840085354E /* NavigationTest.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -550,12 +567,15 @@
 				1588FD162845D2EE003E7E0C /* KingFisherTester.swift in Sources */,
 				1528E7A5282BDDFA002C4B74 /* MyPath.swift in Sources */,
 				157376FD284F81E00068F1DB /* SheetView.swift in Sources */,
+				15F56C08286A01490085354E /* StoryPageView.swift in Sources */,
 				1522AB7D2869C2DE006F05A3 /* FunFactsView.swift in Sources */,
+				15F56C0B286A03840085354E /* NavigationTest.swift in Sources */,
 				15EFC71B282A20F100F65F0D /* MySheetAndFullScreenCover.swift in Sources */,
 				15F45F25283F810F00EF9027 /* ImagePicker.swift in Sources */,
 				153FCB80282BDA67009E469A /* MyShape.swift in Sources */,
 				1588FD1B2845D79A003E7E0C /* StateProperty.swift in Sources */,
 				1573B22D2839F90E0080965E /* TextEditorAndField.swift in Sources */,
+				15F56C06286A00060085354E /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

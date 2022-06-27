@@ -10,20 +10,16 @@ import SwiftUI
 struct StoryView: View {
     var body: some View {
         
-        VStack {
-            Text("My Story")
-                .font(.largeTitle)
-                .bold()
-                .padding()
+        NavigationLink {
             
-            ScrollView {
-                Text(information.story)
-                    .font(.body)
-                    .padding()
-            }
-            
+        } label: {
+            Text("Text!")
         }
-        .padding([.top, .bottom], 50)
+        .navigationTitle("Title")
+        .toolbar {
+            Text("toolbar")
+        }
+
     }
 }
 
