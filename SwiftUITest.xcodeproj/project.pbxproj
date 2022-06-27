@@ -16,6 +16,12 @@
 		1502D78F280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502D78E280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift */; };
 		1507C08D282B97E5001D38A5 /* MyClipShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507C08C282B97E5001D38A5 /* MyClipShape.swift */; };
 		150F01612847A6D800CBA883 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F01602847A6D800CBA883 /* AuthViewModel.swift */; };
+		1522AB752869C252006F05A3 /* SampleAppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522AB742869C252006F05A3 /* SampleAppTab.swift */; };
+		1522AB772869C2C9006F05A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522AB762869C2C9006F05A3 /* HomeView.swift */; };
+		1522AB792869C2CF006F05A3 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522AB782869C2CF006F05A3 /* StoryView.swift */; };
+		1522AB7B2869C2D9006F05A3 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522AB7A2869C2D9006F05A3 /* FavoritesView.swift */; };
+		1522AB7D2869C2DE006F05A3 /* FunFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522AB7C2869C2DE006F05A3 /* FunFactsView.swift */; };
+		1522AB802869C46D006F05A3 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522AB7F2869C46D006F05A3 /* Info.swift */; };
 		1528E7A5282BDDFA002C4B74 /* MyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528E7A4282BDDFA002C4B74 /* MyPath.swift */; };
 		1533C46F283B648700CE6A1A /* MyPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533C46E283B648700CE6A1A /* MyPresentationMode.swift */; };
 		153FCB80282BDA67009E469A /* MyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FCB7F282BDA67009E469A /* MyShape.swift */; };
@@ -80,6 +86,12 @@
 		1502D78E280D20E300219350 /* SwiftUITestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1507C08C282B97E5001D38A5 /* MyClipShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClipShape.swift; sourceTree = "<group>"; };
 		150F01602847A6D800CBA883 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		1522AB742869C252006F05A3 /* SampleAppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppTab.swift; sourceTree = "<group>"; };
+		1522AB762869C2C9006F05A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1522AB782869C2CF006F05A3 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		1522AB7A2869C2D9006F05A3 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		1522AB7C2869C2DE006F05A3 /* FunFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsView.swift; sourceTree = "<group>"; };
+		1522AB7F2869C46D006F05A3 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		1528E7A4282BDDFA002C4B74 /* MyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPath.swift; sourceTree = "<group>"; };
 		1533C46E283B648700CE6A1A /* MyPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPresentationMode.swift; sourceTree = "<group>"; };
 		153FCB7F282BDA67009E469A /* MyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShape.swift; sourceTree = "<group>"; };
@@ -163,6 +175,7 @@
 		1502D770280D20E200219350 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				1522AB722869C217006F05A3 /* SwiftUISampleApps */,
 				159A3F482866F51700BF89FD /* Alamofire */,
 				153FCB7D282BDA23009E469A /* View */,
 				150F015F2847A66E00CBA883 /* ViewModel */,
@@ -220,6 +233,35 @@
 				157376FE284F85A10068F1DB /* TestViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1522AB722869C217006F05A3 /* SwiftUISampleApps */ = {
+			isa = PBXGroup;
+			children = (
+				1522AB7E2869C461006F05A3 /* Model */,
+				1522AB732869C243006F05A3 /* View */,
+			);
+			path = SwiftUISampleApps;
+			sourceTree = "<group>";
+		};
+		1522AB732869C243006F05A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1522AB742869C252006F05A3 /* SampleAppTab.swift */,
+				1522AB762869C2C9006F05A3 /* HomeView.swift */,
+				1522AB782869C2CF006F05A3 /* StoryView.swift */,
+				1522AB7A2869C2D9006F05A3 /* FavoritesView.swift */,
+				1522AB7C2869C2DE006F05A3 /* FunFactsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1522AB7E2869C461006F05A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1522AB7F2869C46D006F05A3 /* Info.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		153FCB7D282BDA23009E469A /* View */ = {
@@ -485,24 +527,30 @@
 				156CD61F28523129000E7D90 /* TestModel.swift in Sources */,
 				159F7836281E60D700293E83 /* MyTextFieldTester.swift in Sources */,
 				15A0211E286843C10016ED2E /* Customer.swift in Sources */,
+				1522AB792869C2CF006F05A3 /* StoryView.swift in Sources */,
 				150F01612847A6D800CBA883 /* AuthViewModel.swift in Sources */,
 				15508E35281F7A2300EDEB10 /* ListViewTester.swift in Sources */,
 				1573B2302839FF040080965E /* TextEditorPlaceholder.swift in Sources */,
 				15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */,
+				1522AB7B2869C2D9006F05A3 /* FavoritesView.swift in Sources */,
 				15A0211A28682CCF0016ED2E /* TodoList.swift in Sources */,
+				1522AB802869C46D006F05A3 /* Info.swift in Sources */,
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				15ADCBE928485DC2009734C1 /* AuthView .swift in Sources */,
 				159A3F4B2866F54600BF89FD /* Todo.swift in Sources */,
 				1533C46F283B648700CE6A1A /* MyPresentationMode.swift in Sources */,
 				15AC010C282E31F40031CCE7 /* MyNavigationLink.swift in Sources */,
+				1522AB772869C2C9006F05A3 /* HomeView.swift in Sources */,
 				159A3F442866E0D400BF89FD /* TodoViewModel.swift in Sources */,
 				1502D772280D20E200219350 /* SwiftUITestApp.swift in Sources */,
 				15487BB5281E5E280088EF5A /* MyTextFileAlert.swift in Sources */,
+				1522AB752869C252006F05A3 /* SampleAppTab.swift in Sources */,
 				1507C08D282B97E5001D38A5 /* MyClipShape.swift in Sources */,
 				15A0211C286832560016ED2E /* Post.swift in Sources */,
 				1588FD162845D2EE003E7E0C /* KingFisherTester.swift in Sources */,
 				1528E7A5282BDDFA002C4B74 /* MyPath.swift in Sources */,
 				157376FD284F81E00068F1DB /* SheetView.swift in Sources */,
+				1522AB7D2869C2DE006F05A3 /* FunFactsView.swift in Sources */,
 				15EFC71B282A20F100F65F0D /* MySheetAndFullScreenCover.swift in Sources */,
 				15F45F25283F810F00EF9027 /* ImagePicker.swift in Sources */,
 				153FCB80282BDA67009E469A /* MyShape.swift in Sources */,
