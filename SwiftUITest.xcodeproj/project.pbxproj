@@ -50,6 +50,8 @@
 		15FAAC092873104700275FE0 /* PushNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC082873104700275FE0 /* PushNotificationView.swift */; };
 		15FAAC0D2873118100275FE0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 15FAAC0C2873118100275FE0 /* FirebaseAnalytics */; };
 		15FAAC0F2873118100275FE0 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 15FAAC0E2873118100275FE0 /* FirebaseMessaging */; };
+		15FAAC12287320B600275FE0 /* MapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC11287320B600275FE0 /* MapKitView.swift */; };
+		15FAAC14287322C600275FE0 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC13287322C600275FE0 /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		15F45F28283F815000EF9027 /* ImageViewTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewTester.swift; sourceTree = "<group>"; };
 		15F56C0A286A03840085354E /* NavigationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTest.swift; sourceTree = "<group>"; };
 		15FAAC082873104700275FE0 /* PushNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationView.swift; sourceTree = "<group>"; };
+		15FAAC11287320B600275FE0 /* MapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitView.swift; sourceTree = "<group>"; };
+		15FAAC13287322C600275FE0 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +300,7 @@
 		15A3BC3B286ABC54000375B0 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				15FAAC1028731F6100275FE0 /* Mapkit & CoreLocation */,
 				159A3F482866F51700BF89FD /* Alamofire */,
 				15F45F27283F814100EF9027 /* Kingfisher */,
 				150F015F2847A66E00CBA883 /* Firebase */,
@@ -361,6 +366,15 @@
 				150F01602847A6D800CBA883 /* AuthViewModel.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		15FAAC1028731F6100275FE0 /* Mapkit & CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				15FAAC11287320B600275FE0 /* MapKitView.swift */,
+				15FAAC13287322C600275FE0 /* MapViewModel.swift */,
+			);
+			path = "Mapkit & CoreLocation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FAAC14287322C600275FE0 /* MapViewModel.swift in Sources */,
 				15F45F29283F815000EF9027 /* ImageViewTester.swift in Sources */,
 				15FAAC092873104700275FE0 /* PushNotificationView.swift in Sources */,
 				1553C6B928235E6E00EA8615 /* MySection.swift in Sources */,
@@ -522,6 +537,7 @@
 				1573B2302839FF040080965E /* TextEditorPlaceholder.swift in Sources */,
 				15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */,
 				15A0211A28682CCF0016ED2E /* TodoList.swift in Sources */,
+				15FAAC12287320B600275FE0 /* MapKitView.swift in Sources */,
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				15ADCBE928485DC2009734C1 /* AuthView .swift in Sources */,
 				159A3F4B2866F54600BF89FD /* Todo.swift in Sources */,
@@ -700,6 +716,7 @@
 				DEVELOPMENT_TEAM = MAU8HFALP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -729,6 +746,7 @@
 				DEVELOPMENT_TEAM = MAU8HFALP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
