@@ -11,7 +11,7 @@ import Kingfisher
 struct ContentView: View {
     
     var body: some View {
-        MapKitView()
+        CheckBoxMainView()
     }
 }
 
