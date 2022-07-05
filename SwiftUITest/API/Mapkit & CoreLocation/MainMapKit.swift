@@ -9,7 +9,7 @@
 import SwiftUI
 import MapKit
 
-struct MapKitView: View {
+struct MainMapKit: View {
     
    
     
@@ -26,6 +26,6 @@ struct MapKitView: View {
 
 struct MapKitView_Previews: PreviewProvider {
     static var previews: some View {
-        MapKitView(mapViewModel: MapViewModel())
+        MainMapKit(mapViewModel: MapViewModel())
     }
 }

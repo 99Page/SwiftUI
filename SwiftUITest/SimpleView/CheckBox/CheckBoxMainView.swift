@@ -10,35 +10,41 @@ import SwiftUI
 struct CheckBoxMainView: View {
     
     @State private var isChecked = false
-    @State private var isShowingCheckButton = false
-    @State private var isShowingDialog = false
+    @ObservedObject var viewModel = CheckBoxViewModel()
     
     var body: some View {
         
         NavigationView {
-            HStack() {
-                if isShowingCheckButton {
-                    Button {
-                        isChecked.toggle()
-                    } label: {
-                        Image(systemName: isChecked ? "circlebadge.fill" : "circlebadge")
+            
+            List {
+                ForEach(viewModel.models.indices, id: \.self) { idx in
+                    HStack {
+                        if viewModel.isShowingCheckBox {
+                            Button {
+                                viewModel.models[idx].isChecked.toggle()
+                            } label: {
+                                Image(systemName: viewModel.models[idx].isChecked ? "circlebadge.fill" : "circlebadge")
+                            }
+                        }
+                        Text(viewModel.models[idx].text)
                     }
                 }
-                
-                Text("Temporary Text")
-                    .lineLimit(1)
-                Spacer()
+                .onDelete { index in
+                    withAnimation {
+                        viewModel.models.remove(atOffsets: index)
+                    }
+                }
             }
+            
             .padding(.horizontal, 10)
             
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    
-                    if !isShowingCheckButton {
+                    if !viewModel.isShowingCheckBox {
                         Menu {
                             Button {
                                 withAnimation {
-                                    isShowingCheckButton.toggle()
+                                    viewModel.isShowingCheckBox.toggle()
                                 }
                             } label: {
                                 Text("삭제하기")
@@ -50,7 +56,7 @@ struct CheckBoxMainView: View {
                     } else {
                         Button {
                             withAnimation {
-                                isShowingCheckButton.toggle()
+                                viewModel.isShowingCheckBox.toggle()
                             }
                         } label: {
                             Text("취소")
