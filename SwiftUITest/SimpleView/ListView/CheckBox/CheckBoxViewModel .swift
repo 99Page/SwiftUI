@@ -19,7 +19,7 @@ class CheckBoxViewModel : ObservableObject {
     }
 }
 
-struct CheckBoxModel : Identifiable {
+struct CheckBoxModel : Identifiable, Hashable {
     var id = UUID()
     var isChecked: Bool
     var text: String

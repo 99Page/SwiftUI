@@ -9,14 +9,15 @@ import SwiftUI
 
 struct CheckBoxMainView: View {
     
+    @State private var selection = Set<CheckBoxModel>()
     @State private var isChecked = false
     @ObservedObject var viewModel = CheckBoxViewModel()
-    
+
+
     var body: some View {
         
         NavigationView {
-            
-            List {
+            List(selection: $selection) {
                 ForEach(viewModel.models.indices, id: \.self) { idx in
                     HStack {
                         if viewModel.isShowingCheckBox {
@@ -29,45 +30,24 @@ struct CheckBoxMainView: View {
                         Text(viewModel.models[idx].text)
                     }
                 }
-                .onDelete { index in
-                    withAnimation {
-                        viewModel.models.remove(atOffsets: index)
-                    }
-                }
+                .onDelete(perform: deleteList)
+                .onMove(perform: moveList)
             }
-            
             .padding(.horizontal, 10)
-            
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    if !viewModel.isShowingCheckBox {
-                        Menu {
-                            Button {
-                                withAnimation {
-                                    viewModel.isShowingCheckBox.toggle()
-                                }
-                            } label: {
-                                Text("삭제하기")
-                            }
-                        } label: {
-                            Image(systemName: "line.3.horizontal")
-                        }
-
-                    } else {
-                        Button {
-                            withAnimation {
-                                viewModel.isShowingCheckBox.toggle()
-                            }
-                        } label: {
-                            Text("취소")
-                                .foregroundColor(.red)
-                        }
-
-                    }
-                
+                    EditButton() 
                 }
             }
         }
+    }
+    
+    func deleteList(at offset: IndexSet) {
+        withAnimation { viewModel.models.remove(atOffsets: offset) }
+    }
+    
+    func moveList(from source: IndexSet, to destination: Int) {
+        viewModel.models.move(fromOffsets: source, toOffset: destination)
     }
 }
 

@@ -43,6 +43,9 @@
 		15ADCBE628485D25009734C1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 15ADCBE528485D25009734C1 /* FirebaseStorage */; };
 		15ADCBE928485DC2009734C1 /* AuthView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ADCBE828485DC2009734C1 /* AuthView .swift */; };
 		15C49143286B2C1A007EA72E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C49142286B2C1A007EA72E /* Extension.swift */; };
+		15E3F4AD2875391600829A1C /* PagingViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E3F4AC2875391600829A1C /* PagingViewMain.swift */; };
+		15E3F4AF2875393D00829A1C /* PagingTabView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E3F4AE2875393D00829A1C /* PagingTabView1.swift */; };
+		15E3F4B12875396D00829A1C /* PagingTabView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E3F4B02875396D00829A1C /* PagingTabView2.swift */; };
 		15EFC71B282A20F100F65F0D /* MySheetAndFullScreenCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EFC71A282A20F100F65F0D /* MySheetAndFullScreenCover.swift */; };
 		15F45F25283F810F00EF9027 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F45F24283F810F00EF9027 /* ImagePicker.swift */; };
 		15F45F29283F815000EF9027 /* ImageViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F45F28283F815000EF9027 /* ImageViewTester.swift */; };
@@ -108,6 +111,9 @@
 		15ADCBDC28485CBC009734C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		15ADCBE828485DC2009734C1 /* AuthView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthView .swift"; sourceTree = "<group>"; };
 		15C49142286B2C1A007EA72E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		15E3F4AC2875391600829A1C /* PagingViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewMain.swift; sourceTree = "<group>"; };
+		15E3F4AE2875393D00829A1C /* PagingTabView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabView1.swift; sourceTree = "<group>"; };
+		15E3F4B02875396D00829A1C /* PagingTabView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabView2.swift; sourceTree = "<group>"; };
 		15EFC71A282A20F100F65F0D /* MySheetAndFullScreenCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySheetAndFullScreenCover.swift; sourceTree = "<group>"; };
 		15F45F24283F810F00EF9027 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		15F45F28283F815000EF9027 /* ImageViewTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewTester.swift; sourceTree = "<group>"; };
@@ -178,9 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				15C49141286B2BFB007EA72E /* Global */,
+				15A3BC3B286ABC54000375B0 /* API */,
 				153FCB7D282BDA23009E469A /* SimpleView */,
 				15A3BC3C286ABC82000375B0 /* UIClone */,
-				15A3BC3B286ABC54000375B0 /* API */,
 				1522AB722869C217006F05A3 /* SwiftUISampleApps */,
 				1502D771280D20E200219350 /* SwiftUITestApp.swift */,
 				1502D773280D20E200219350 /* ContentView.swift */,
@@ -234,7 +240,7 @@
 		153FCB7D282BDA23009E469A /* SimpleView */ = {
 			isa = PBXGroup;
 			children = (
-				15F7E9F22873F80700B1019B /* CheckBox */,
+				15E3F4AB2875390700829A1C /* TabViewPaging */,
 				153FCB7E282BDA33009E469A /* Protocol */,
 				15EFC717282A20CD00F65F0D /* Modifier */,
 				15F56C09286A03650085354E /* Navigation */,
@@ -270,6 +276,7 @@
 		15508E33281F7A1600EDEB10 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
+				15F7E9F22873F80700B1019B /* CheckBox */,
 				15508E34281F7A2300EDEB10 /* ListViewTester.swift */,
 			);
 			path = ListView;
@@ -329,6 +336,16 @@
 				15C49142286B2C1A007EA72E /* Extension.swift */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		15E3F4AB2875390700829A1C /* TabViewPaging */ = {
+			isa = PBXGroup;
+			children = (
+				15E3F4AC2875391600829A1C /* PagingViewMain.swift */,
+				15E3F4AE2875393D00829A1C /* PagingTabView1.swift */,
+				15E3F4B02875396D00829A1C /* PagingTabView2.swift */,
+			);
+			path = TabViewPaging;
 			sourceTree = "<group>";
 		};
 		15EFC717282A20CD00F65F0D /* Modifier */ = {
@@ -545,6 +562,8 @@
 				15F45F29283F815000EF9027 /* ImageViewTester.swift in Sources */,
 				15FAAC092873104700275FE0 /* PushNotificationView.swift in Sources */,
 				1553C6B928235E6E00EA8615 /* MySection.swift in Sources */,
+				15E3F4AF2875393D00829A1C /* PagingTabView1.swift in Sources */,
+				15E3F4AD2875391600829A1C /* PagingViewMain.swift in Sources */,
 				159F7836281E60D700293E83 /* MyTextFieldTester.swift in Sources */,
 				15A0211E286843C10016ED2E /* Customer.swift in Sources */,
 				15F7E9F82874028C00B1019B /* CheckBoxViewModel .swift in Sources */,
@@ -559,6 +578,7 @@
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				15F7E9F42873F81800B1019B /* CheckBoxMainView.swift in Sources */,
 				15ADCBE928485DC2009734C1 /* AuthView .swift in Sources */,
+				15E3F4B12875396D00829A1C /* PagingTabView2.swift in Sources */,
 				159A3F4B2866F54600BF89FD /* Todo.swift in Sources */,
 				1533C46F283B648700CE6A1A /* MyPresentationMode.swift in Sources */,
 				15AC010C282E31F40031CCE7 /* MyNavigationLink.swift in Sources */,
