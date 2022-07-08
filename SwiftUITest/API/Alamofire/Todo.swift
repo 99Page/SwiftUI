@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 struct Todo: Identifiable, Codable {
     var userId: Int
@@ -25,4 +26,27 @@ struct Todo: Identifiable, Codable {
 
 struct Todos: Codable {
     var results: [Todo]
+}
+
+struct JsonData: Codable {
+    var date: Date
+    var title: String
+    var week: String
+}
+
+class JsonDataModel: ObservableObject {
+    @Published var data = [JsonData]()
+    
+    init() {
+        fetchData()
+    }
+    
+    func fetchData() {
+        let url = "???"
+        AF.request(url, method: .get)
+            .responseDecodable(of: [JsonData].self) { data in
+                guard let data = data.value else { return }
+                self.data = data
+            }
+    }
 }

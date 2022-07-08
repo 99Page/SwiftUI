@@ -31,7 +31,7 @@
 		159A3F472866E2B800BF89FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 159A3F462866E2B800BF89FD /* Alamofire */; };
 		159A3F4B2866F54600BF89FD /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3F4A2866F54600BF89FD /* Todo.swift */; };
 		159F7836281E60D700293E83 /* MyTextFieldTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F7835281E60D700293E83 /* MyTextFieldTester.swift */; };
-		15A0211A28682CCF0016ED2E /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0211928682CCF0016ED2E /* TodoList.swift */; };
+		15A0211A28682CCF0016ED2E /* MainViewTodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0211928682CCF0016ED2E /* MainViewTodoList.swift */; };
 		15A0211C286832560016ED2E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0211B286832560016ED2E /* Post.swift */; };
 		15A0211E286843C10016ED2E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0211D286843C10016ED2E /* Customer.swift */; };
 		15A3BC41286ACC98000375B0 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3BC40286ACC98000375B0 /* Global.swift */; };
@@ -56,7 +56,7 @@
 		15FAAC092873104700275FE0 /* PushNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC082873104700275FE0 /* PushNotificationView.swift */; };
 		15FAAC0D2873118100275FE0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 15FAAC0C2873118100275FE0 /* FirebaseAnalytics */; };
 		15FAAC0F2873118100275FE0 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 15FAAC0E2873118100275FE0 /* FirebaseMessaging */; };
-		15FAAC12287320B600275FE0 /* MainMapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC11287320B600275FE0 /* MainMapKit.swift */; };
+		15FAAC12287320B600275FE0 /* MainViewMapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC11287320B600275FE0 /* MainViewMapKit.swift */; };
 		15FAAC14287322C600275FE0 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC13287322C600275FE0 /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,7 +103,7 @@
 		159A3F432866E0D400BF89FD /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
 		159A3F4A2866F54600BF89FD /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		159F7835281E60D700293E83 /* MyTextFieldTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextFieldTester.swift; sourceTree = "<group>"; };
-		15A0211928682CCF0016ED2E /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		15A0211928682CCF0016ED2E /* MainViewTodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTodoList.swift; sourceTree = "<group>"; };
 		15A0211B286832560016ED2E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		15A0211D286843C10016ED2E /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		15A3BC40286ACC98000375B0 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		15F7E9F52873FF7600B1019B /* CheckBoxMainView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxMainView2.swift; sourceTree = "<group>"; };
 		15F7E9F72874028C00B1019B /* CheckBoxViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CheckBoxViewModel .swift"; sourceTree = "<group>"; };
 		15FAAC082873104700275FE0 /* PushNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationView.swift; sourceTree = "<group>"; };
-		15FAAC11287320B600275FE0 /* MainMapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapKit.swift; sourceTree = "<group>"; };
+		15FAAC11287320B600275FE0 /* MainViewMapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewMapKit.swift; sourceTree = "<group>"; };
 		15FAAC13287322C600275FE0 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -304,7 +304,7 @@
 			children = (
 				159A3F432866E0D400BF89FD /* TodoViewModel.swift */,
 				159A3F4A2866F54600BF89FD /* Todo.swift */,
-				15A0211928682CCF0016ED2E /* TodoList.swift */,
+				15A0211928682CCF0016ED2E /* MainViewTodoList.swift */,
 				15A0211B286832560016ED2E /* Post.swift */,
 				15A0211D286843C10016ED2E /* Customer.swift */,
 			);
@@ -405,7 +405,7 @@
 		15FAAC1028731F6100275FE0 /* Mapkit & CoreLocation */ = {
 			isa = PBXGroup;
 			children = (
-				15FAAC11287320B600275FE0 /* MainMapKit.swift */,
+				15FAAC11287320B600275FE0 /* MainViewMapKit.swift */,
 				15FAAC13287322C600275FE0 /* MapViewModel.swift */,
 			);
 			path = "Mapkit & CoreLocation";
@@ -573,8 +573,8 @@
 				15508E35281F7A2300EDEB10 /* ListViewTester.swift in Sources */,
 				1573B2302839FF040080965E /* TextEditorPlaceholder.swift in Sources */,
 				15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */,
-				15A0211A28682CCF0016ED2E /* TodoList.swift in Sources */,
-				15FAAC12287320B600275FE0 /* MainMapKit.swift in Sources */,
+				15A0211A28682CCF0016ED2E /* MainViewTodoList.swift in Sources */,
+				15FAAC12287320B600275FE0 /* MainViewMapKit.swift in Sources */,
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				15F7E9F42873F81800B1019B /* CheckBoxMainView.swift in Sources */,
 				15ADCBE928485DC2009734C1 /* AuthView .swift in Sources */,

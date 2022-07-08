@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TodoList: View {
+struct MainViewTodoList: View {
     
     @ObservedObject var viewModel = TodoViewModel()
     
@@ -24,13 +24,12 @@ struct TodoList: View {
             } label: {
                 Text("UPLOAD")
             }
-
         }
     }
 }
 
-struct TodoList_Previews: PreviewProvider {
+struct MainTodoList_Previews: PreviewProvider {
     static var previews: some View {
-        TodoList()
+        MainViewTodoList()
     }
 }

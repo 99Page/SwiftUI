@@ -19,8 +19,8 @@ class TodoViewModel: ObservableObject {
     }
     
     func fetchTodos() {
-        let url = "https://jsonplaceholder.typicode.com/todos"
-        AF.request(url, method: .get)
+        let baseURL = "https://jsonplaceholder.typicode.com/todos"
+        AF.request(baseURL, method: .get)
             .responseDecodable(of: [Todo].self) { data in
                 guard let data = data.value else { return }
                 self.todo = data
@@ -29,7 +29,6 @@ class TodoViewModel: ObservableObject {
     
     func uploadPost() {
         let url = "https://jsonplaceholder.typicode.com/posts"
-    
         let param: [String: Any] = [
             "userId" : 1000,
             "id" : 1000,

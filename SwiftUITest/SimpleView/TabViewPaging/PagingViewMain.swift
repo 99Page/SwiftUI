@@ -12,13 +12,14 @@ struct PagingViewMain: View {
     let imageNames = ["person", "pencil", "circle"]
     var body: some View {
         VStack {
+            Text("\(UIScreen.main.bounds.height)")
             TabView {
                 ForEach(0..<imageNames.count) { idx in
                     Image(systemName: imageNames[idx])
                         .resizable()
                         .scaledToFit()
                         .background(Color.green)
-                        .frame(width: UIScreen.main.bounds.width, height: MAX_HEIGHT * 0.3)
+                        .frame(width: UIScreen.main.bounds.width, height: 400)
                     
                 }
               
@@ -26,7 +27,7 @@ struct PagingViewMain: View {
                 PagingTabView2()
             }
             .tabViewStyle(PageTabViewStyle())
-            .frame(width: UIScreen.main.bounds.width, height: MAX_HEIGHT * 0.3)
+            .frame(width: UIScreen.main.bounds.width, height: 400)
             
             Spacer()
         }
