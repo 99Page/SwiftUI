@@ -11,7 +11,7 @@ import SwiftUI
 
 enum MapDetails {
     static let startingLocation = CLLocationCoordinate2D(latitude: 0, longitude: 0)
-    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
 }
 
 struct ItemLocation: Identifiable {

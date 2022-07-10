@@ -16,28 +16,28 @@ struct MainViewMapKit: View {
     @ObservedObject var mapViewModel = MapViewModel()
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("현재 나의 위도 : \(mapViewModel.region.center.latitude)")
-                Text("현재 나의 경도 : \(mapViewModel.region.center.longitude)")
-            }
-            
-            Map(coordinateRegion: $mapViewModel.region, showsUserLocation: true, userTrackingMode: .constant(.follow),
-                annotationItems: mapViewModel.annotations) { item in
-                MapAnnotation(coordinate: item.coordinate) {
-                    Button {
-                        print("Button is clicked!")
-                    } label: {
-                        Image(systemName: "mappin.and.ellipse")
-                            .foregroundColor(item.tintColor)
-                    }
-
-
+        NavigationView {
+            VStack {
+                VStack {
+                    Text("현재 나의 위도 : \(mapViewModel.region.center.latitude)")
+                    Text("현재 나의 경도 : \(mapViewModel.region.center.longitude)")
                 }
-
+                
+                Map(coordinateRegion: $mapViewModel.region, showsUserLocation: true, userTrackingMode: .constant(.follow),
+                    annotationItems: mapViewModel.annotations) { item in
+                    MapAnnotation(coordinate: item.coordinate) {
+                        NavigationLink {
+                            Text("\(mapViewModel.region.center.distance(from: item.coordinate))")
+                        } label: {
+                            Image(systemName: "mappin.and.ellipse")
+                                .foregroundColor(item.tintColor)
+                        }
+                    }
+                }
+                    .edgesIgnoringSafeArea(.all)
             }
-                .edgesIgnoringSafeArea(.all)
         }
+
     }
 }
 
