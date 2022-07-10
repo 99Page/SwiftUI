@@ -3,25 +3,54 @@
 //  SwiftUITest
 //
 //  Created by 노우영 on 2022/07/09.
-//
+//  Cloning from : https://www.youtube.com/watch?v=QG4fdzAh3Mo&t=949s
 
 import SwiftUI
 
 struct TeslaView: View {
+    
+    fileprivate func TeslaDivider() -> some View {
+        return Rectangle()
+            .frame(height: 1)
+            .foregroundColor(.gray)
+            .padding(.bottom, 7)
+    }
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack {
-                    Rectangle()
-                        .frame(height: 1)
-                        .foregroundColor(.gray)
+                    TeslaDivider()
                     TeslaVehicleDrivingInfo()
+                    
+                    Image("TeslaCar")
+                        .resizable()
+                        .scaledToFit()
+                        .aspectRatio(0.6, contentMode: .fit)
+                    
+                    TeslaDivider()
+                    
+                    VStack {
+                        HStack {
+                            Text("Quick Shortcuts")
+                                .font(.system(size: 20, weight: .bold))
+                            Spacer()
+                            Text("Edit")
+                                .font(.system(size: 15, weight: .medium))
+                                .foregroundColor(.gray)
+                        }
+                        
+                        HStack {
+                            TeslaButton(buttomSystemName: <#T##String#>, hint: <#T##String#>)
+                        }
+                    }
+                    
                 }
                 .padding()
                 .foregroundColor(.white)
                 .frame(width: MAX_WIDTH)
             }
-            .background(.black)
+            .background(Color.TeslaBlack)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) { TeslaNavigationBarLeading()}
                 ToolbarItemGroup(placement: .navigationBarTrailing) { TeslaNavigationBarTrailing()}
@@ -35,8 +64,10 @@ struct TeslaVehicleDrivingInfo: View {
     var body: some View {
         HStack {
             Image(systemName: "battery.75")
+                .foregroundColor(.TeslaGreen)
             Text("237 MILES")
                 .font(.system(size: 16))
+                .foregroundColor(.TeslaGreen)
             
             Spacer()
             
@@ -45,6 +76,7 @@ struct TeslaVehicleDrivingInfo: View {
                     .font(.system(size: 19, weight: .semibold))
                 Text("Last updated 5min ago")
                     .font(.system(size: 14))
+                    .foregroundColor(.gray)
             }
         }
     }
@@ -68,7 +100,7 @@ struct TeslaNavigationBarLeading: View {
 struct TeslaNavigationBarTrailing: View {
     var body: some View {
         HStack {
-            Image(systemName: "lock")
+            Image(systemName: "lock.fill")
                 .padding(6)
                 .background(Color.gray)
                 .clipShape(Circle())
@@ -93,8 +125,9 @@ struct TeslaMicView: View {
                     .scaledToFit()
                     .frame(width: MAX_WIDTH * 0.1, height: MAX_WIDTH * 0.1)
                     .padding()
-                    .background(Color.green)
+                    .background(Color.TeslaGreen)
                     .clipShape(Circle())
+                    .padding()
             }
         }
     }

@@ -44,6 +44,8 @@
 		15ADCBE428485D25009734C1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 15ADCBE328485D25009734C1 /* FirebaseFirestore */; };
 		15ADCBE628485D25009734C1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 15ADCBE528485D25009734C1 /* FirebaseStorage */; };
 		15ADCBE928485DC2009734C1 /* AuthView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ADCBE828485DC2009734C1 /* AuthView .swift */; };
+		15C07FEA287AEDEC005A02BC /* TeslaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C07FE9287AEDEC005A02BC /* TeslaButton.swift */; };
+		15C07FED287AEE2A005A02BC /* SFCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C07FEC287AEE2A005A02BC /* SFCircleImage.swift */; };
 		15C49143286B2C1A007EA72E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C49142286B2C1A007EA72E /* Extension.swift */; };
 		15E3F4AD2875391600829A1C /* PagingViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E3F4AC2875391600829A1C /* PagingViewMain.swift */; };
 		15E3F4AF2875393D00829A1C /* PagingTabView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E3F4AE2875393D00829A1C /* PagingTabView1.swift */; };
@@ -114,6 +116,8 @@
 		15AC010B282E31F40031CCE7 /* MyNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationLink.swift; sourceTree = "<group>"; };
 		15ADCBDC28485CBC009734C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		15ADCBE828485DC2009734C1 /* AuthView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthView .swift"; sourceTree = "<group>"; };
+		15C07FE9287AEDEC005A02BC /* TeslaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaButton.swift; sourceTree = "<group>"; };
+		15C07FEC287AEE2A005A02BC /* SFCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCircleImage.swift; sourceTree = "<group>"; };
 		15C49142286B2C1A007EA72E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		15E3F4AC2875391600829A1C /* PagingViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewMain.swift; sourceTree = "<group>"; };
 		15E3F4AE2875393D00829A1C /* PagingTabView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabView1.swift; sourceTree = "<group>"; };
@@ -299,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				15739B3C2878820A004E0F30 /* TeslaView.swift */,
+				15C07FE9287AEDEC005A02BC /* TeslaButton.swift */,
 			);
 			path = Tesla;
 			sourceTree = "<group>";
@@ -351,9 +356,18 @@
 			path = UIClone;
 			sourceTree = "<group>";
 		};
+		15C07FEB287AEE18005A02BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15C07FEC287AEE2A005A02BC /* SFCircleImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		15C49141286B2BFB007EA72E /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				15C07FEB287AEE18005A02BC /* View */,
 				15A3BC40286ACC98000375B0 /* Global.swift */,
 				15C49142286B2C1A007EA72E /* Extension.swift */,
 			);
@@ -597,6 +611,7 @@
 				15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */,
 				15A0211A28682CCF0016ED2E /* MainViewTodoList.swift in Sources */,
 				15799FC8287AB9E900387561 /* GridView.swift in Sources */,
+				15C07FEA287AEDEC005A02BC /* TeslaButton.swift in Sources */,
 				15FAAC12287320B600275FE0 /* MainViewMapKit.swift in Sources */,
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				15F7E9F42873F81800B1019B /* CheckBoxMainView.swift in Sources */,
@@ -616,6 +631,7 @@
 				15F56C0B286A03840085354E /* NavigationTest.swift in Sources */,
 				15EFC71B282A20F100F65F0D /* MySheetAndFullScreenCover.swift in Sources */,
 				15F45F25283F810F00EF9027 /* ImagePicker.swift in Sources */,
+				15C07FED287AEE2A005A02BC /* SFCircleImage.swift in Sources */,
 				153FCB80282BDA67009E469A /* MyShape.swift in Sources */,
 				1573B22D2839F90E0080965E /* TextEditorAndField.swift in Sources */,
 				15F7E9F62873FF7600B1019B /* CheckBoxMainView2.swift in Sources */,

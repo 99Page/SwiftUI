@@ -11,6 +11,8 @@ import CoreLocation
 
 extension Color {
     static let TeslaGreen = Color("TeslaGreen")
+    static let TeslaBlack = Color("TeslaBlack")
+    static let TeslaButtonBlack = Color("TeslaButtonBlack")
 }
 
 extension CLLocationCoordinate2D {
