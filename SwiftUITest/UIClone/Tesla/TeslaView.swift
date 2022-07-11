@@ -39,10 +39,6 @@ struct TeslaView: View {
                                 .font(.system(size: 15, weight: .medium))
                                 .foregroundColor(.gray)
                         }
-                        
-                        HStack {
-                            TeslaButton(buttomSystemName: <#T##String#>, hint: <#T##String#>)
-                        }
                     }
                     
                 }

@@ -97,6 +97,8 @@
 		1528E7A4282BDDFA002C4B74 /* MyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPath.swift; sourceTree = "<group>"; };
 		1533C46E283B648700CE6A1A /* MyPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPresentationMode.swift; sourceTree = "<group>"; };
 		153FCB7F282BDA67009E469A /* MyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShape.swift; sourceTree = "<group>"; };
+		1542DB45287C3E010062CF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1542DB46287C3E160062CF9A /* SwiftUITest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUITest.entitlements; sourceTree = "<group>"; };
 		15487BB2281E4C0F0088EF5A /* MyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertView.swift; sourceTree = "<group>"; };
 		15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextFileAlert.swift; sourceTree = "<group>"; };
 		15508E34281F7A2300EDEB10 /* ListViewTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTester.swift; sourceTree = "<group>"; };
@@ -191,6 +193,8 @@
 		1502D770280D20E200219350 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				1542DB46287C3E160062CF9A /* SwiftUITest.entitlements */,
+				1542DB45287C3E010062CF9A /* Info.plist */,
 				15C49141286B2BFB007EA72E /* Global */,
 				15A3BC3B286ABC54000375B0 /* API */,
 				153FCB7D282BDA23009E469A /* SimpleView */,
@@ -790,12 +794,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUITest/SwiftUITest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITest/Preview Content\"";
 				DEVELOPMENT_TEAM = MAU8HFALP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUITest/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -820,12 +826,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUITest/SwiftUITest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITest/Preview Content\"";
 				DEVELOPMENT_TEAM = MAU8HFALP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUITest/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
