@@ -11,7 +11,7 @@ import SwiftUI
 import MapKit
 
 
-struct MainViewMapKit: View {
+struct MapkitView: View {
     
     @ObservedObject var mapViewModel = MapViewModel()
     
@@ -37,12 +37,13 @@ struct MainViewMapKit: View {
                     .edgesIgnoringSafeArea(.all)
             }
         }
+        .navigationBarHidden(true)
 
     }
 }
 
 struct MapViewKitView_Previews: PreviewProvider {
     static var previews: some View {
-        MainViewMapKit(mapViewModel: MapViewModel())
+        MapkitView(mapViewModel: MapViewModel())
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TeslaView: View {
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     fileprivate func TeslaDivider() -> some View {
         return Rectangle()
             .frame(height: 1)
@@ -49,10 +51,31 @@ struct TeslaView: View {
             .background(Color.TeslaBlack)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) { TeslaNavigationBarLeading()}
-                ToolbarItemGroup(placement: .navigationBarTrailing) { TeslaNavigationBarTrailing()}
+                ToolbarItemGroup(placement: .navigationBarTrailing) { TeslaNavigationBarTrailiing }
             }
         }
         .overlay { TeslaMicView() }
+        .navigationBarHidden(true)
+    }
+    
+    var TeslaNavigationBarTrailiing: some View {
+        HStack {
+            Image(systemName: "lock.fill")
+                .padding(6)
+                .background(Color.gray)
+                .clipShape(Circle())
+            
+            Button {
+                self.presentationMode.wrappedValue.dismiss()
+            } label: {
+                Image(systemName: "gear")
+                    .padding(6)
+                    .background(Color.gray)
+                    .clipShape(Circle())
+            }
+        }
+        .padding(.top, 20)
+        .foregroundColor(.white)
     }
 }
 
@@ -91,22 +114,6 @@ struct TeslaNavigationBarLeading: View {
                 .font(.system(size: 25, weight: .bold))
         }
         .padding(.top, 20)
-    }
-}
-struct TeslaNavigationBarTrailing: View {
-    var body: some View {
-        HStack {
-            Image(systemName: "lock.fill")
-                .padding(6)
-                .background(Color.gray)
-                .clipShape(Circle())
-            Image(systemName: "gear")
-                .padding(6)
-                .background(Color.gray)
-                .clipShape(Circle())
-        }
-        .padding(.top, 20)
-        .foregroundColor(.white)
     }
 }
 

@@ -18,6 +18,7 @@
 		150F01612847A6D800CBA883 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F01602847A6D800CBA883 /* AuthViewModel.swift */; };
 		1528E7A5282BDDFA002C4B74 /* MyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528E7A4282BDDFA002C4B74 /* MyPath.swift */; };
 		1533C46F283B648700CE6A1A /* MyPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533C46E283B648700CE6A1A /* MyPresentationMode.swift */; };
+		15385325287EC68F008FF389 /* PropertyWrapperAndFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15385324287EC68F008FF389 /* PropertyWrapperAndFunction.swift */; };
 		153FCB80282BDA67009E469A /* MyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FCB7F282BDA67009E469A /* MyShape.swift */; };
 		15487BB3281E4C0F0088EF5A /* MyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487BB2281E4C0F0088EF5A /* MyAlertView.swift */; };
 		15487BB5281E5E280088EF5A /* MyTextFileAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */; };
@@ -60,7 +61,7 @@
 		15FAAC092873104700275FE0 /* PushNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC082873104700275FE0 /* PushNotificationView.swift */; };
 		15FAAC0D2873118100275FE0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 15FAAC0C2873118100275FE0 /* FirebaseAnalytics */; };
 		15FAAC0F2873118100275FE0 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 15FAAC0E2873118100275FE0 /* FirebaseMessaging */; };
-		15FAAC12287320B600275FE0 /* MainViewMapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC11287320B600275FE0 /* MainViewMapKit.swift */; };
+		15FAAC12287320B600275FE0 /* MapkitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC11287320B600275FE0 /* MapkitView.swift */; };
 		15FAAC14287322C600275FE0 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAC13287322C600275FE0 /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -96,8 +97,9 @@
 		150F01602847A6D800CBA883 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		1528E7A4282BDDFA002C4B74 /* MyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPath.swift; sourceTree = "<group>"; };
 		1533C46E283B648700CE6A1A /* MyPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPresentationMode.swift; sourceTree = "<group>"; };
+		15385324287EC68F008FF389 /* PropertyWrapperAndFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperAndFunction.swift; sourceTree = "<group>"; };
 		153FCB7F282BDA67009E469A /* MyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShape.swift; sourceTree = "<group>"; };
-		1542DB45287C3E010062CF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1542DB45287C3E010062CF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1542DB46287C3E160062CF9A /* SwiftUITest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUITest.entitlements; sourceTree = "<group>"; };
 		15487BB2281E4C0F0088EF5A /* MyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertView.swift; sourceTree = "<group>"; };
 		15487BB4281E5E280088EF5A /* MyTextFileAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextFileAlert.swift; sourceTree = "<group>"; };
@@ -132,7 +134,7 @@
 		15F7E9F52873FF7600B1019B /* CheckBoxMainView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxMainView2.swift; sourceTree = "<group>"; };
 		15F7E9F72874028C00B1019B /* CheckBoxViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CheckBoxViewModel .swift"; sourceTree = "<group>"; };
 		15FAAC082873104700275FE0 /* PushNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationView.swift; sourceTree = "<group>"; };
-		15FAAC11287320B600275FE0 /* MainViewMapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewMapKit.swift; sourceTree = "<group>"; };
+		15FAAC11287320B600275FE0 /* MapkitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapkitView.swift; sourceTree = "<group>"; };
 		15FAAC13287322C600275FE0 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,7 +174,6 @@
 		1502D765280D20E200219350 = {
 			isa = PBXGroup;
 			children = (
-				15ADCBDC28485CBC009734C1 /* GoogleService-Info.plist */,
 				1502D770280D20E200219350 /* SwiftUITest */,
 				1502D781280D20E300219350 /* SwiftUITestTests */,
 				1502D78B280D20E300219350 /* SwiftUITestUITests */,
@@ -193,16 +194,18 @@
 		1502D770280D20E200219350 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
-				1542DB46287C3E160062CF9A /* SwiftUITest.entitlements */,
-				1542DB45287C3E010062CF9A /* Info.plist */,
+				15385323287EC676008FF389 /* Data */,
 				15C49141286B2BFB007EA72E /* Global */,
 				15A3BC3B286ABC54000375B0 /* API */,
+				15799FC6287AB9CB00387561 /* Grid */,
 				153FCB7D282BDA23009E469A /* SimpleView */,
 				15A3BC3C286ABC82000375B0 /* UIClone */,
-				1522AB722869C217006F05A3 /* SwiftUISampleApps */,
 				1502D771280D20E200219350 /* SwiftUITestApp.swift */,
 				1502D773280D20E200219350 /* ContentView.swift */,
 				1502D775280D20E300219350 /* Assets.xcassets */,
+				1542DB46287C3E160062CF9A /* SwiftUITest.entitlements */,
+				1542DB45287C3E010062CF9A /* Info.plist */,
+				15ADCBDC28485CBC009734C1 /* GoogleService-Info.plist */,
 				1502D777280D20E300219350 /* Preview Content */,
 			);
 			path = SwiftUITest;
@@ -242,17 +245,25 @@
 			path = Firebase;
 			sourceTree = "<group>";
 		};
-		1522AB722869C217006F05A3 /* SwiftUISampleApps */ = {
+		15385322287EC657008FF389 /* Others */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = SwiftUISampleApps;
+			path = Others;
+			sourceTree = "<group>";
+		};
+		15385323287EC676008FF389 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				15385324287EC68F008FF389 /* PropertyWrapperAndFunction.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		153FCB7D282BDA23009E469A /* SimpleView */ = {
 			isa = PBXGroup;
 			children = (
-				15799FC6287AB9CB00387561 /* Grid */,
+				15385322287EC657008FF389 /* Others */,
 				15E3F4AB2875390700829A1C /* TabViewPaging */,
 				153FCB7E282BDA33009E469A /* Protocol */,
 				15EFC717282A20CD00F65F0D /* Modifier */,
@@ -445,7 +456,7 @@
 		15FAAC1028731F6100275FE0 /* Mapkit & CoreLocation */ = {
 			isa = PBXGroup;
 			children = (
-				15FAAC11287320B600275FE0 /* MainViewMapKit.swift */,
+				15FAAC11287320B600275FE0 /* MapkitView.swift */,
 				15FAAC13287322C600275FE0 /* MapViewModel.swift */,
 			);
 			path = "Mapkit & CoreLocation";
@@ -616,7 +627,7 @@
 				15A0211A28682CCF0016ED2E /* MainViewTodoList.swift in Sources */,
 				15799FC8287AB9E900387561 /* GridView.swift in Sources */,
 				15C07FEA287AEDEC005A02BC /* TeslaButton.swift in Sources */,
-				15FAAC12287320B600275FE0 /* MainViewMapKit.swift in Sources */,
+				15FAAC12287320B600275FE0 /* MapkitView.swift in Sources */,
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				15F7E9F42873F81800B1019B /* CheckBoxMainView.swift in Sources */,
 				15ADCBE928485DC2009734C1 /* AuthView .swift in Sources */,
@@ -634,6 +645,7 @@
 				1528E7A5282BDDFA002C4B74 /* MyPath.swift in Sources */,
 				15F56C0B286A03840085354E /* NavigationTest.swift in Sources */,
 				15EFC71B282A20F100F65F0D /* MySheetAndFullScreenCover.swift in Sources */,
+				15385325287EC68F008FF389 /* PropertyWrapperAndFunction.swift in Sources */,
 				15F45F25283F810F00EF9027 /* ImagePicker.swift in Sources */,
 				15C07FED287AEE2A005A02BC /* SFCircleImage.swift in Sources */,
 				153FCB80282BDA67009E469A /* MyShape.swift in Sources */,
