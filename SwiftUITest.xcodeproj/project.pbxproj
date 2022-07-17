@@ -17,6 +17,7 @@
 		1507C08D282B97E5001D38A5 /* MyClipShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507C08C282B97E5001D38A5 /* MyClipShape.swift */; };
 		150F01612847A6D800CBA883 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F01602847A6D800CBA883 /* AuthViewModel.swift */; };
 		1528E7A5282BDDFA002C4B74 /* MyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528E7A4282BDDFA002C4B74 /* MyPath.swift */; };
+		1530E1B028840F0600CE27A5 /* SheetForeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1530E1AF28840F0600CE27A5 /* SheetForeachView.swift */; };
 		1533C46F283B648700CE6A1A /* MyPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533C46E283B648700CE6A1A /* MyPresentationMode.swift */; };
 		15385325287EC68F008FF389 /* PropertyWrapperAndFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15385324287EC68F008FF389 /* PropertyWrapperAndFunction.swift */; };
 		153FCB80282BDA67009E469A /* MyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FCB7F282BDA67009E469A /* MyShape.swift */; };
@@ -45,6 +46,8 @@
 		15ADCBE428485D25009734C1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 15ADCBE328485D25009734C1 /* FirebaseFirestore */; };
 		15ADCBE628485D25009734C1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 15ADCBE528485D25009734C1 /* FirebaseStorage */; };
 		15ADCBE928485DC2009734C1 /* AuthView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ADCBE828485DC2009734C1 /* AuthView .swift */; };
+		15BDC41E2881060700514EF1 /* JWTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDC41D2881060700514EF1 /* JWTView.swift */; };
+		15BDC42028810AB900514EF1 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDC41F28810AB900514EF1 /* AuthModel.swift */; };
 		15C07FEA287AEDEC005A02BC /* TeslaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C07FE9287AEDEC005A02BC /* TeslaButton.swift */; };
 		15C07FED287AEE2A005A02BC /* SFCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C07FEC287AEE2A005A02BC /* SFCircleImage.swift */; };
 		15C49143286B2C1A007EA72E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C49142286B2C1A007EA72E /* Extension.swift */; };
@@ -96,6 +99,7 @@
 		1507C08C282B97E5001D38A5 /* MyClipShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClipShape.swift; sourceTree = "<group>"; };
 		150F01602847A6D800CBA883 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		1528E7A4282BDDFA002C4B74 /* MyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPath.swift; sourceTree = "<group>"; };
+		1530E1AF28840F0600CE27A5 /* SheetForeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetForeachView.swift; sourceTree = "<group>"; };
 		1533C46E283B648700CE6A1A /* MyPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPresentationMode.swift; sourceTree = "<group>"; };
 		15385324287EC68F008FF389 /* PropertyWrapperAndFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperAndFunction.swift; sourceTree = "<group>"; };
 		153FCB7F282BDA67009E469A /* MyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShape.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		15AC010B282E31F40031CCE7 /* MyNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationLink.swift; sourceTree = "<group>"; };
 		15ADCBDC28485CBC009734C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		15ADCBE828485DC2009734C1 /* AuthView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthView .swift"; sourceTree = "<group>"; };
+		15BDC41D2881060700514EF1 /* JWTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTView.swift; sourceTree = "<group>"; };
+		15BDC41F28810AB900514EF1 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		15C07FE9287AEDEC005A02BC /* TeslaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaButton.swift; sourceTree = "<group>"; };
 		15C07FEC287AEE2A005A02BC /* SFCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCircleImage.swift; sourceTree = "<group>"; };
 		15C49142286B2C1A007EA72E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -355,6 +361,7 @@
 		15A3BC3B286ABC54000375B0 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				15BDC41C288105FB00514EF1 /* JWT */,
 				15FAAC1028731F6100275FE0 /* Mapkit & CoreLocation */,
 				159A3F482866F51700BF89FD /* Alamofire */,
 				15F45F27283F814100EF9027 /* Kingfisher */,
@@ -369,6 +376,15 @@
 				15739B3E2878893E004E0F30 /* Tesla */,
 			);
 			path = UIClone;
+			sourceTree = "<group>";
+		};
+		15BDC41C288105FB00514EF1 /* JWT */ = {
+			isa = PBXGroup;
+			children = (
+				15BDC41D2881060700514EF1 /* JWTView.swift */,
+				15BDC41F28810AB900514EF1 /* AuthModel.swift */,
+			);
+			path = JWT;
 			sourceTree = "<group>";
 		};
 		15C07FEB287AEE18005A02BC /* View */ = {
@@ -404,6 +420,7 @@
 			children = (
 				15EFC71A282A20F100F65F0D /* MySheetAndFullScreenCover.swift */,
 				1507C08C282B97E5001D38A5 /* MyClipShape.swift */,
+				1530E1AF28840F0600CE27A5 /* SheetForeachView.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -631,6 +648,7 @@
 				1502D774280D20E200219350 /* ContentView.swift in Sources */,
 				15F7E9F42873F81800B1019B /* CheckBoxMainView.swift in Sources */,
 				15ADCBE928485DC2009734C1 /* AuthView .swift in Sources */,
+				1530E1B028840F0600CE27A5 /* SheetForeachView.swift in Sources */,
 				15E3F4B12875396D00829A1C /* PagingTabView2.swift in Sources */,
 				159A3F4B2866F54600BF89FD /* Todo.swift in Sources */,
 				1533C46F283B648700CE6A1A /* MyPresentationMode.swift in Sources */,
@@ -648,6 +666,8 @@
 				15385325287EC68F008FF389 /* PropertyWrapperAndFunction.swift in Sources */,
 				15F45F25283F810F00EF9027 /* ImagePicker.swift in Sources */,
 				15C07FED287AEE2A005A02BC /* SFCircleImage.swift in Sources */,
+				15BDC42028810AB900514EF1 /* AuthModel.swift in Sources */,
+				15BDC41E2881060700514EF1 /* JWTView.swift in Sources */,
 				153FCB80282BDA67009E469A /* MyShape.swift in Sources */,
 				1573B22D2839F90E0080965E /* TextEditorAndField.swift in Sources */,
 				15F7E9F62873FF7600B1019B /* CheckBoxMainView2.swift in Sources */,

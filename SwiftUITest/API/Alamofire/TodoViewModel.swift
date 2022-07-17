@@ -28,7 +28,7 @@ class TodoViewModel: ObservableObject {
     }
     
     func uploadPost() {
-        let url = "https://jsonplaceholder.typicode.com/posts"
+        let url = "https://jsonplaceholder.typicode.com/postsss"
         let param: [String: Any] = [
             "userId" : 1000,
             "id" : 1000,
@@ -38,7 +38,12 @@ class TodoViewModel: ObservableObject {
         
         AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default)
             .responseDecodable(of: Post.self) { response in
-                print("POST DEBUG : \(response)")
+                switch response.result {
+                case .success(let value):
+                    print("success : \(value)")
+                case .failure(let err):
+                    print(err)
+                }
             }
     }
 }

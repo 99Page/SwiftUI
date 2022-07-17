@@ -32,6 +32,14 @@ struct ContentView: View {
                     } label: {
                         Text("PropertyWrapperAndFunction")
                     }
+                    
+                    NavigationLink("JWTView", destination: JWTView())
+                    
+                    NavigationLink("Alamofire", destination: MainViewTodoList())
+                    
+                    NavigationLink("Sheet Test") {
+                        SheetForeachView()
+                    }
                 }
             }
             .lineLimit(1)
