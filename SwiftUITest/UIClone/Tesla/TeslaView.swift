@@ -19,43 +19,44 @@ struct TeslaView: View {
     }
     
     var body: some View {
-        NavigationView {
-            ScrollView {
+        ScrollView {
+            VStack {
+                TeslaDivider()
+                TeslaVehicleDrivingInfo()
+                
+                Image("TeslaCar")
+                    .resizable()
+                    .scaledToFit()
+                    .aspectRatio(0.6, contentMode: .fit)
+                
+                TeslaDivider()
+                
                 VStack {
-                    TeslaDivider()
-                    TeslaVehicleDrivingInfo()
-                    
-                    Image("TeslaCar")
-                        .resizable()
-                        .scaledToFit()
-                        .aspectRatio(0.6, contentMode: .fit)
-                    
-                    TeslaDivider()
-                    
-                    VStack {
-                        HStack {
-                            Text("Quick Shortcuts")
-                                .font(.system(size: 20, weight: .bold))
-                            Spacer()
-                            Text("Edit")
-                                .font(.system(size: 15, weight: .medium))
-                                .foregroundColor(.gray)
-                        }
+                    HStack {
+                        Text("Quick Shortcuts")
+                            .font(.system(size: 20, weight: .bold))
+                        Spacer()
+                        Text("Edit")
+                            .font(.system(size: 15, weight: .medium))
+                            .foregroundColor(.gray)
                     }
-                    
                 }
-                .padding()
-                .foregroundColor(.white)
-                .frame(width: MAX_WIDTH)
+                
+                Spacer()
+                
             }
+            .padding()
             .background(Color.TeslaBlack)
-            .toolbar {
-                ToolbarItemGroup(placement: .navigationBarLeading) { TeslaNavigationBarLeading()}
-                ToolbarItemGroup(placement: .navigationBarTrailing) { TeslaNavigationBarTrailiing }
-            }
+            .foregroundColor(.white)
+            .frame(width: MAX_WIDTH)
+        }
+        .background(Color.red)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarLeading) { TeslaNavigationBarLeading()}
+            ToolbarItemGroup(placement: .navigationBarTrailing) { TeslaNavigationBarTrailiing }
         }
         .overlay { TeslaMicView() }
-        .navigationBarHidden(true)
     }
     
     var TeslaNavigationBarTrailiing: some View {

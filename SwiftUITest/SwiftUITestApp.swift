@@ -8,6 +8,7 @@
 import SwiftUI
 import Firebase
 import UserNotifications
+import FirebaseMessaging
 
 @main
 struct SwiftUITestApp: App {
@@ -21,12 +22,12 @@ struct SwiftUITestApp: App {
     }
 }
 
+// Push 알림 테스트를 위한 코드
 class AppDelegate: NSObject, UIApplicationDelegate {
     let gcmMessageIDKey = "gcm.message_id"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
-
         Messaging.messaging().delegate = self
 
         if #available(iOS 10.0, *) {

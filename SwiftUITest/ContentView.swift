@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: columns) {
+                VStack {
                     NavigationLink {
                         TeslaView()
                     } label: {
@@ -36,13 +36,28 @@ struct ContentView: View {
                     NavigationLink("JWTView", destination: JWTView())
                     
                     NavigationLink("Alamofire", destination: MainViewTodoList())
+//                    
+//                    NavigationLink("Sheet Test") {
+//                        SheetForeachView()
+//                    }
                     
-                    NavigationLink("Sheet Test") {
-                        SheetForeachView()
+                    NavigationLink("Scroll Reader") {
+                        MyScrollReader()
+                    }
+                    
+                    NavigationLink("Navigation Toolbar") {
+                        MyNavigationBarView() 
+                    }
+                    
+                    NavigationLink("Scroll Offset") {
+                        ScrollOffset()
+                    }
+                    
+                    NavigationLink("Scene Phase") {
+                        BackgroundTimer()
                     }
                 }
             }
-            .lineLimit(1)
         }
     }
 }
